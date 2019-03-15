@@ -1,0 +1,82 @@
+一切都是弹性
+兼容浏览器（课余时间去探索）  
+响应式网站的概念：
+flexible grid layout 弹性网格布局   rem
+flexible image 弹性图片   bootstrap 响应式图片 img-response
+media queries 媒体查询   
+
+响应式网站优点：
+1.减少工作量
+  一套代码适用于多个端
+ 大屏幕设备 投影 pc 笔记本 平板 手机
+ 剩下的工作只是一些js脚本、css样式的改动
+ 2.节省时间
+ 3.每个设备都能得到正确的设计
+ 4.搜索优化（SEO优化好 更好的用户体验）
+
+ 缺点：
+ 1.会加载更多的样式和脚本文件
+ 2.设计比较难精准定位和控制 
+ 3.老版本的浏览器兼容不好
+
+ 响应式网站需要的技术栈：
+ H5 css css3 js
+
+ 熟悉的浏览器
+ chrome Safari firefox Opera 360 uc 猎豹 QQ浏览器 微信浏览器
+
+ 浏览器的内核（百度）
+
+ 微信浏览器的内核使用的是QQ浏览器的内核 X5内核
+
+ 媒体查询：针对不同媒体类型可以定制不同的样式规则
+
+ css2: 麻烦 费事 粗糙
+ <link rel="stylesheet" type="text/css" href="site.css" media="screen">
+ <link rel="stylesheet" type="text/css" href="print.css" media="print">
+
+ css3媒体查询：
+ @media all and(min-width:800px)and(orientation:lanscape){
+     .....
+ }
+
+ all 媒体类型 screen print 可以指定  不指定的话all代表全部媒体类型
+
+ 关键字 and or not only
+
+ css3媒体查询属性介绍
+
+width:视口的宽度
+height:视口高度
+device-width: 渲染表面的宽度 就是设备屏幕的宽度
+device-height:渲染表面的高度 就是设备屏幕的高度
+orientation:检测设备是否处于横向还是纵向
+aspect-radio: 基于视口宽度和高度的宽高比
+            width/height 如：16/9 4/3
+device-aspect-ratio,描述了输出设备的宽高比
+color: 每种颜色的位数 bits 如： min-color： 16位 8位 根据设备颜色色位的不同决定显示哪些颜色
+resolution: 检测屏幕或者打印设备的分辨率
+           如：min-resolution:300dpi
+
+以上所有的属性均可以添加min- max- 前缀
+
+viewport视口布局：
+布局视口（layout viewport）
+可视视口（visual viewport）
+理想视口（ideal viewport）
+
+
+px（1个px相当于1个像素） 绝对单位
+
+相对单位
+em（相对的长度单位   相对参照物为父元素的font-size）
+当没有设置 font-size 浏览器会有一个默认的em  1em =16px
+
+rem（具有继承特点的）
+相对参照物为根元素 html
+当没有设置font-size  浏览器会有一个默认的rem设置
+1rem = 16px
+
+
+
+ 
